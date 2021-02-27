@@ -10,10 +10,14 @@ import Landing from '../views/Landing';
 import Profile from '../views/Profile';
 import Index from '../views/Index';
 
+import AuthRoute from '../utils/route/AuthRoute';
+import Signin from './authentification/signin';
+
 const App = () => (
   <BrowserRouter>
     <Switch>
       {/* add routes with layouts */}
+      <AuthRoute path="/signin" exact component={Signin} />
       <Route path="/admin" component={Admin} />
       <Route path="/auth" component={Auth} />
       {/* add routes without layouts */}
