@@ -33,4 +33,5 @@ export const getTokenWithExpiry = () => {
 
 export const clearToken = () => {
   localStorage.clear(AUTH_TOKEN);
+  window.location.href = '/';
 };
