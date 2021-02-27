@@ -18,22 +18,16 @@ export default function Index() {
               </h2>
               <div className="mt-12">
                 <a
-                  href="https://www.creative-tim.com/learning-lab/tailwind/react/overview/notus?ref=nr-index"
-                  target="_blank"
+                  href="#categories"
                   className="get-started text-white font-bold px-6 py-4 rounded outline-none focus:outline-none mr-1 mb-1 bg-blue-500 active:bg-blue-600 uppercase text-sm shadow hover:shadow-lg ease-linear transition-all duration-150"
                 >
-                  Get started
+                  Browse our categories
                 </a>
               </div>
             </div>
           </div>
         </div>
-
-        <img
-          className="absolute top-0 b-auto right-0 pt-16 sm:w-6/12 -mt-48 sm:mt-0 w-10/12 max-h-860px"
-          src={require("../assets/img/pattern_react.png")}
-          alt="..."
-        />
+        <hr id="categories"></hr>
       </section>
 
       <section className="block relative z-1 bg-gray-700">
@@ -43,14 +37,14 @@ export default function Index() {
               <div className="flex flex-wrap">
                 <div className="w-full lg:w-4/12 px-4">
                   <h5 className="text-xl font-semibold pb-4 text-center">
-                    Login Page
+                  Financial transactions
                   </h5>
-                  <Link to="/auth/login">
+                  <Link to="landing">
                     <div className="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150">
                       <img
                         alt="..."
                         className="align-middle border-none max-w-full h-auto rounded-lg"
-                        src={require("../assets/img/login.jpg")}
+                        src={require("../assets/img/categories/finance.jpg")}
                       />
                     </div>
                   </Link>
@@ -58,14 +52,14 @@ export default function Index() {
 
                 <div className="w-full lg:w-4/12 px-4">
                   <h5 className="text-xl font-semibold pb-4 text-center">
-                    Profile Page
+                  Real estate affairs
                   </h5>
-                  <Link to="/profile">
+                  <Link to="/landing">
                     <div className="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150">
                       <img
-                        alt="..."
+                        alt="..." 
                         className="align-middle border-none max-w-full h-auto rounded-lg"
-                        src={require("../assets/img/profile.jpg")}
+                        src={require("../assets/img/categories/real-estate.jpg")}
                       />
                     </div>
                   </Link>
@@ -73,14 +67,14 @@ export default function Index() {
 
                 <div className="w-full lg:w-4/12 px-4">
                   <h5 className="text-xl font-semibold pb-4 text-center">
-                    Landing Page
+                  Establishing companies
                   </h5>
                   <Link to="/landing">
                     <div className="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150">
                       <img
                         alt="..."
                         className="align-middle border-none max-w-full h-auto rounded-lg"
-                        src={require("../assets/img/landing.jpg")}
+                        src={require("../assets/img/categories/companies.jpg")}
                       />
                     </div>
                   </Link>
