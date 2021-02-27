@@ -10,6 +10,7 @@ import AuthRoute from '../utils/route/AuthRoute';
 import Signin from './authentification/signin';
 import PrivateRoute from '../utils/route/PrivateRoute';
 import Admin from '../layouts/Admin';
+import Landing from '../views/Landing';
 
 const App = () => (
   <BrowserRouter>
@@ -19,6 +20,7 @@ const App = () => (
       <PrivateRoute path="/admin" component={Admin} />
       {/* add routes without layouts */}
       <Route path="/" exact component={Index} />
+      <Route path="/landing" exact component={Landing} />
       <PrivateRoute path="/profile" exact component={Profile} />
       {/* add redirect for first page */}
       <Redirect from="*" to="/" />
