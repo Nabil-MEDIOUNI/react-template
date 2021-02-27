@@ -19,7 +19,6 @@ const App = () => (
       {/* add routes with layouts */}
       <AuthRoute path="/signin" exact component={Signin} />
       <Route path="/admin" component={Admin} />
-      <Route path="/auth" component={Auth} />
       {/* add routes without layouts */}
       <Route path="/landing" exact component={Landing} />
       <Route path="/profile" exact component={Profile} />
