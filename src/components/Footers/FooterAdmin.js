@@ -14,7 +14,7 @@ export default function FooterAdmin() {
                   href="https://www.creative-tim.com?ref=nr-footer-admin"
                   className="text-gray-600 hover:text-gray-800 text-sm font-semibold py-1"
                 >
-                  Creative Tim
+                  Team Chojra
                 </a>
               </div>
             </div>
@@ -25,7 +25,7 @@ export default function FooterAdmin() {
                     href="https://www.creative-tim.com?ref=nr-footer-admin"
                     className="text-gray-700 hover:text-gray-900 text-sm font-semibold block py-1 px-3"
                   >
-                    Creative Tim
+                    Team Chojra
                   </a>
                 </li>
                 <li>

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 // components
 
@@ -34,7 +34,7 @@ export default function CardSettings() {
                   <input
                     type="text"
                     className="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
-                    defaultValue="lucky.jesse"
+                    defaultValue="nabil-mediouni"
                   />
                 </div>
               </div>
@@ -49,7 +49,7 @@ export default function CardSettings() {
                   <input
                     type="email"
                     className="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
-                    defaultValue="jesse@example.com"
+                    defaultValue="nabilmediouni8@gmail.com"
                   />
                 </div>
               </div>
@@ -64,7 +64,7 @@ export default function CardSettings() {
                   <input
                     type="text"
                     className="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
-                    defaultValue="Lucky"
+                    defaultValue="Nabil"
                   />
                 </div>
               </div>
@@ -79,7 +79,7 @@ export default function CardSettings() {
                   <input
                     type="text"
                     className="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
-                    defaultValue="Jesse"
+                    defaultValue="Mediouni"
                   />
                 </div>
               </div>
@@ -102,7 +102,7 @@ export default function CardSettings() {
                   <input
                     type="text"
                     className="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
-                    defaultValue="Bld Mihail Kogalniceanu, nr. 8 Bl 1, Sc 1, Ap 09"
+                    defaultValue="Ben Arous Fouchena, 130 ali douagi"
                   />
                 </div>
               </div>
@@ -117,7 +117,7 @@ export default function CardSettings() {
                   <input
                     type="email"
                     className="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
-                    defaultValue="New York"
+                    defaultValue="Fouchena"
                   />
                 </div>
               </div>
@@ -132,7 +132,7 @@ export default function CardSettings() {
                   <input
                     type="text"
                     className="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
-                    defaultValue="United States"
+                    defaultValue="Tunisia"
                   />
                 </div>
               </div>
@@ -147,7 +147,7 @@ export default function CardSettings() {
                   <input
                     type="text"
                     className="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
-                    defaultValue="Postal Code"
+                    defaultValue="2082"
                   />
                 </div>
               </div>
@@ -172,7 +172,7 @@ export default function CardSettings() {
                     className="px-3 py-3 placeholder-gray-400 text-gray-700 bg-white rounded text-sm shadow focus:outline-none focus:shadow-outline w-full ease-linear transition-all duration-150"
                     defaultValue="A beautiful UI Kit and Admin for React & Tailwind CSS. It is Free and Open Source."
                     rows="4"
-                  ></textarea>
+                  />
                 </div>
               </div>
             </div>

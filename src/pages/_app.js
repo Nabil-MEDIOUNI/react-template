@@ -1,6 +1,6 @@
 import React from 'react';
 import {
-  BrowserRouter, Redirect, Route, Switch,
+  BrowserRouter, Redirect, Switch,
 } from 'react-router-dom';
 
 import Admin from '../layouts/Admin';
