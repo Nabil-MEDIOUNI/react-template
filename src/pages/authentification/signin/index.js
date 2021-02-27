@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
 import { signin } from '../../../api/auth';
 import { setTokenWithExpiry } from '../../../api/helpers/HandleToken';
+import Navbar from '../../../components/Navbars/AuthNavbar';
 import Alert from '../../../utils/alert';
 import { handleMany } from '../../../utils/handle';
 
@@ -24,7 +24,7 @@ export default function Login() {
         setAlert(true);
         setError('');
         setTimeout(() => {
-          window.location.href = '/cours';
+          window.location.href = '/admin';
         }, 500);
       }
     });
@@ -32,8 +32,9 @@ export default function Login() {
 
   return (
     <>
+      <Navbar />
       <main>
-        <section className="relative w-full h-full py-40 min-h-screen">
+        <section className="relative w-full h-full min-h-screen" style={{ paddingTop: '10rem' }}>
           <div
             className="absolute top-0 w-full h-full bg-gray-900 bg-no-repeat bg-full"
             style={{
@@ -145,11 +146,6 @@ export default function Login() {
                     >
                       <small>Forgot password?</small>
                     </a>
-                  </div>
-                  <div className="w-1/2 text-right">
-                    <Link to="/auth/register" className="text-gray-300">
-                      <small>Create new account</small>
-                    </Link>
                   </div>
                 </div>
               </div>
