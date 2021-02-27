@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import { getTokenWithExpiry } from '../../api/helpers/HandleToken';
 
 export default function Navbar() {
   const [navbarOpen, setNavbarOpen] = React.useState(false);
@@ -29,6 +30,7 @@ export default function Navbar() {
             id="example-navbar-warning"
           >
             <ul className="flex flex-col lg:flex-row list-none lg:ml-auto">
+              {!getTokenWithExpiry() && (
               <li className="flex items-center">
                 <a href="/signin">
                   <button
@@ -39,6 +41,19 @@ export default function Navbar() {
                   </button>
                 </a>
               </li>
+              )}
+              {getTokenWithExpiry() && (
+              <li className="flex items-center">
+                <a href="/signin">
+                  <button
+                    className="bg-blue-500 text-white active:bg-blue-600 text-xs font-bold uppercase px-4 py-2 rounded shadow hover:shadow-lg outline-none focus:outline-none lg:mr-1 lg:mb-0 ml-3 mb-3 ease-linear transition-all duration-150"
+                    type="button"
+                  >
+                    Dashboard
+                  </button>
+                </a>
+              </li>
+              )}
             </ul>
           </div>
         </div>
