@@ -6,9 +6,10 @@ import Footer from '../components/Footers/Footer';
 export default function Landing() {
   return (
     <>
-      <Navbar transparent />
+      <Navbar />
       <main>
         <section className="relative py-20">
+    <a href="https://war9a.netlify.app" target="_blank" rel="noopener noreferrer">
           <div
             className="bottom-auto top-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden -mt-20 h-20"
             style={{ transform: 'translateZ(0)' }}
@@ -95,6 +96,7 @@ export default function Landing() {
               </div>
             </div>
           </div>
+</a>
         </section>
 
       </main>
