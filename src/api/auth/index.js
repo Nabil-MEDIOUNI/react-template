@@ -1,6 +1,6 @@
 import API from '../config/index';
 
-export const signin = (user) => fetch(`${API}/auth/signin`, {
+export const signin = (user) => fetch(`${API}/signin`, {
   method: 'POST',
   headers: {
     Accept: 'application/json',
@@ -14,7 +14,7 @@ export const signin = (user) => fetch(`${API}/auth/signin`, {
     console.log(err);
   });
 
-export const signout = () => fetch(`${API}/auth/signout`, {
+export const signout = () => fetch(`${API}/signout`, {
   method: 'GET',
   headers: {
     Accept: 'application/json',

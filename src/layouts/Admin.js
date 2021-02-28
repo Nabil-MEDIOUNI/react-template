@@ -11,6 +11,8 @@ import AdminNavbar from '../components/Navbars/AdminNavbar';
 import Sidebar from '../components/Sidebar/Sidebar';
 import HeaderStats from '../components/Headers/HeaderStats';
 import FooterAdmin from '../components/Footers/FooterAdmin';
+import Builder from '../components/FormBuilder/Builder';
+import Building from '../components/Building';
 
 // views
 
@@ -28,6 +30,7 @@ export default function Admin() {
             <Route path="/admin/maps" exact component={Maps} />
             <Route path="/admin/settings" exact component={Settings} />
             <Route path="/admin/tables" exact component={Tables} />
+            <Route path="/admin/form" exact component={Builder} />
             <Redirect from="/admin" to="/admin/dashboard" />
           </Switch>
           <FooterAdmin />

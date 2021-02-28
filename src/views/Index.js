@@ -10,6 +10,17 @@ export default function Index() {
     <>
       <IndexNavbar fixed />
       <section className="header relative pt-16 items-center flex h-screen max-h-860-px">
+        <img
+          src="/static/img/logo_1024x1024.png"
+          style={{
+            position: 'absolute',
+            width: '35%',
+            right: '10%',
+            top: '10%',
+          }}
+          alt=""
+        />
+
         <div className="container mx-auto items-center flex flex-wrap">
           <div className="w-full md:w-8/12 lg:w-6/12 xl:w-6/12 px-4">
             <div className="pt-32 sm:pt-0">
@@ -37,14 +48,14 @@ export default function Index() {
               <div className="flex flex-wrap">
                 <div className="w-full lg:w-4/12 px-4">
                   <h5 className="text-xl font-semibold pb-4 text-center">
-                  Financial transactions
+                    Financial transactions
                   </h5>
                   <Link to="landing">
                     <div className="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150">
                       <img
                         alt="..."
                         className="align-middle border-none max-w-full h-auto rounded-lg"
-                        src={require("../assets/img/categories/finance.jpg")}
+                        src={require('../assets/img/categories/finance.jpg')}
                       />
                     </div>
                   </Link>
@@ -52,29 +63,29 @@ export default function Index() {
 
                 <div className="w-full lg:w-4/12 px-4">
                   <h5 className="text-xl font-semibold pb-4 text-center">
-                  Real estate affairs
-                  </h5>
-                  <Link to="/landing">
-                    <div className="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150">
-                      <img
-                        alt="..." 
-                        className="align-middle border-none max-w-full h-auto rounded-lg"
-                        src={require("../assets/img/categories/real-estate.jpg")}
-                      />
-                    </div>
-                  </Link>
-                </div>
-
-                <div className="w-full lg:w-4/12 px-4">
-                  <h5 className="text-xl font-semibold pb-4 text-center">
-                  Establishing companies
+                    Real estate affairs
                   </h5>
                   <Link to="/landing">
                     <div className="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150">
                       <img
                         alt="..."
                         className="align-middle border-none max-w-full h-auto rounded-lg"
-                        src={require("../assets/img/categories/companies.jpg")}
+                        src={require('../assets/img/categories/real-estate.jpg')}
+                      />
+                    </div>
+                  </Link>
+                </div>
+
+                <div className="w-full lg:w-4/12 px-4">
+                  <h5 className="text-xl font-semibold pb-4 text-center">
+                    Establishing companies
+                  </h5>
+                  <Link to="/landing">
+                    <div className="hover:-mt-4 relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-lg rounded-lg ease-linear transition-all duration-150">
+                      <img
+                        alt="..."
+                        className="align-middle border-none max-w-full h-auto rounded-lg"
+                        src={require('../assets/img/categories/companies.jpg')}
                       />
                     </div>
                   </Link>

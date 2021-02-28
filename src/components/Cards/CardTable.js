@@ -96,11 +96,6 @@ export default function CardTable({ color }) {
             <tbody>
               <tr>
                 <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4 text-left flex items-center">
-                  <img
-                    src={require('../../assets/img/bootstrap.jpg')}
-                    className="h-12 w-12 bg-white rounded-full border"
-                    alt="..."
-                  />
                   {' '}
                   <span
                     className={
@@ -162,11 +157,6 @@ export default function CardTable({ color }) {
               </tr>
               <tr>
                 <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4 text-left flex items-center">
-                  <img
-                    src={require('../../assets/img/angular.jpg')}
-                    className="h-12 w-12 bg-white rounded-full border"
-                    alt="..."
-                  />
                   {' '}
                   <span
                     className={
@@ -228,11 +218,6 @@ export default function CardTable({ color }) {
               </tr>
               <tr>
                 <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4 text-left flex items-center">
-                  <img
-                    src={require('../../assets/img/sketch.jpg')}
-                    className="h-12 w-12 bg-white rounded-full border"
-                    alt="..."
-                  />
                   {' '}
                   <span
                     className={
@@ -294,11 +279,6 @@ export default function CardTable({ color }) {
               </tr>
               <tr>
                 <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4 text-left flex items-center">
-                  <img
-                    src={require('../../assets/img/react.jpg')}
-                    className="h-12 w-12 bg-white rounded-full border"
-                    alt="..."
-                  />
                   {' '}
                   <span
                     className={
@@ -361,11 +341,6 @@ export default function CardTable({ color }) {
               </tr>
               <tr>
                 <th className="border-t-0 px-6 align-middle border-l-0 border-r-0 text-xs whitespace-no-wrap p-4 text-left flex items-center">
-                  <img
-                    src={require('../../assets/img/vue.jpg')}
-                    className="h-12 w-12 bg-white rounded-full border"
-                    alt="..."
-                  />
                   {' '}
                   <span
                     className={

@@ -127,10 +127,79 @@ export default function Sidebar() {
                   Settings
                 </Link>
               </li>
+
+              <li className="items-center">
+                <Link
+                  className={
+                    "text-xs uppercase py-3 font-bold block " +
+                    (window.location.href.indexOf("/admin/tables") !== -1
+                      ? "text-blue-500 hover:text-blue-600"
+                      : "text-gray-800 hover:text-gray-600")
+                  }
+                  to="/admin/tables"
+                >
+                  <i
+                    className={
+                      "fas fa-user mr-2 text-sm " +
+                      (window.location.href.indexOf("/admin/tables") !== -1
+                        ? "opacity-75"
+                        : "text-gray-400")
+                    }
+                  ></i>{" "}
+                  ALL Users
+                </Link>
+              </li>
             </ul>
 
             {/* Divider */}
             <hr className="my-4 md:min-w-full" />
+
+            <ul className="md:flex-col md:min-w-full flex flex-col list-none">
+              <li className="items-center">
+                <Link
+                  className={
+                    "text-xs uppercase py-3 font-bold block " +
+                    (window.location.href.indexOf("/admin/form") !== -1
+                      ? "text-blue-500 hover:text-blue-600"
+                      : "text-gray-800 hover:text-gray-600")
+                  }
+                  to="/admin/form"
+                >
+                  <i
+                    className={
+                      "fas fa-tv mr-2 text-sm " +
+                      (window.location.href.indexOf("/admin/form") !== -1
+                        ? "opacity-75"
+                        : "text-gray-400")
+                    }
+                  ></i>{" "}
+                  Form Builder
+                </Link>
+              </li>
+
+              <li className="items-center">
+                <Link
+                  className={
+                    "text-xs uppercase py-3 font-bold block " +
+                    (window.location.href.indexOf("/building") !== -1
+                      ? "text-blue-500 hover:text-blue-600"
+                      : "text-gray-800 hover:text-gray-600")
+                  }
+                  to="/building"
+                >
+                  <i
+                    className={
+                      "fas fa-tv mr-2 text-sm " +
+                      (window.location.href.indexOf("/building") !== -1
+                        ? "opacity-75"
+                        : "text-gray-400")
+                    }
+                  ></i>{" "}
+                 3D Building 
+                </Link>
+              </li>
+        
+            </ul>
 
           </div>
         </div>
