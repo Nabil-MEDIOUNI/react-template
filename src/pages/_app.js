@@ -11,6 +11,7 @@ import Signin from './authentification/signin';
 import PrivateRoute from '../utils/route/PrivateRoute';
 import Admin from '../layouts/Admin';
 import Landing from '../views/Landing';
+import Builder from '../components/FormBuilder/Builder';
 
 const App = () => (
   <BrowserRouter>
@@ -21,6 +22,7 @@ const App = () => (
       {/* add routes without layouts */}
       <Route path="/" exact component={Index} />
       <Route path="/landing" exact component={Landing} />
+      <Route path="/builder" exact component={Builder} />
       <PrivateRoute path="/profile" exact component={Profile} />
       {/* add redirect for first page */}
       <Redirect from="*" to="/" />
