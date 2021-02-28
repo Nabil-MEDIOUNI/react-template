@@ -1,13 +1,8 @@
 import React, { useState } from 'react';
-import { signin } from '../../../api/auth';
-import { setTokenWithExpiry } from '../../../api/helpers/HandleToken';
 import Navbar from '../../../components/Navbars/AuthNavbar';
-import Alert from '../../../utils/alert';
 import { handleMany } from '../../../utils/handle';
 
 export default function Login() {
-  const [openAlert, setAlert] = useState(false);
-  const [validationError, setError] = useState({ message: '' });
 
   const [person, addPerson] = useState({
     email: '',
@@ -15,19 +10,21 @@ export default function Login() {
   });
   const clickSubmit = (event) => {
     event.preventDefault();
-    signin({ ...person }).then((data) => {
-      if (data.error) {
-        setError({ message: data.error });
-        setAlert(true);
-      } else {
-        setTokenWithExpiry(data.token);
-        setAlert(true);
-        setError('');
-        setTimeout(() => {
-          window.location.href = '/admin';
-        }, 500);
-      }
-    });
+    // ({ ...person }).then((data) => {
+    //   if (data.error) {
+    //     setError({ message: data.error });
+    //     setAlert(true);
+    //   } else {
+    //     setTokenWithExpiry(data.token);
+    //     setAlert(true);
+    //     setError('');
+    //     setTimeout(() => {
+    //       window.location.href = '/admin';
+    //     }, 500);
+    //   }
+    // });
+    window.location.href = '/admin';
+
   };
 
   return (
@@ -106,12 +103,6 @@ export default function Login() {
           </div>
         </section>
       </main>
-      {Alert(
-        validationError,
-        openAlert,
-        () => setAlert(false),
-        "You've logged in successfully!",
-      )}
     </>
   );
 }
