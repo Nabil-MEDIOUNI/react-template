@@ -12,9 +12,6 @@ import Sidebar from '../components/Sidebar/Sidebar';
 import HeaderStats from '../components/Headers/HeaderStats';
 import FooterAdmin from '../components/Footers/FooterAdmin';
 import Builder from '../components/FormBuilder/Builder';
-import Building from '../components/Building';
-
-// views
 
 export default function Admin() {
   return (
